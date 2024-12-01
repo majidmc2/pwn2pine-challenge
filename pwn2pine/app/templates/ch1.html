@@ -1,0 +1,33 @@
+<!-- app/templates/ch2.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PWN2PINE</title>
+        <style>
+            p {text-align: center;}
+        </style>
+    </head>
+    <body style="background-color: yellow">
+        <div id="b" style="background-color: yellow"></div>
+        <div id="c" style="
+        background-image: url(../static/images/pic-ch1.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 98vw;
+        height: 89vh;
+        margin-top: 1px;">
+        </div>
+    </body>
+    <script type="text/javascript">
+        let a = "<p>Hello, guys. Can you find any "
+        let b = "color:{{color}}";
+        let c = " here?</p>"
+        let d = `<b style='${b}'>Vulnerabilities</b>`
+        let e = a + d + c
+        document.getElementById("b").innerHTML = e
+    </script>
+</html>

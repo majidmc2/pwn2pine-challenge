@@ -1,0 +1,30 @@
+<!-- app/templates/ch1.html -->
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>PWN2PINE</title>
+        <style>
+            p {text-align: center;}
+            div {text-align: center;}
+        </style>
+    </head>
+    <body style="background-color: yellow">
+        <div style="background-color: yellow">
+            <p>Hello, guys. Can you find any <b>Vulnerabilities</b> here?</p>
+            <div id="f"></div>
+        </div>
+        <div style="
+        background-image: url(../static/images/pic-ch2.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 98vw;
+        height: 85vh;
+        margin-top: 1px;">
+        </div>
+    </body>
+    <script src="{% static 'js1.js' %}"></script>
+</html>
